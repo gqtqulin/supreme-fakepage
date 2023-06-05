@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    height: 82px;
+    width: 287px;
+}
+
+header time {
+    margin-top: 38px;
+
+    color: #000000;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+}
+
+/* slaider & articles */
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* slaider */
+
+.slaider {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slaider img {
+    width: 390px;
+    height: 260px;
+}
+
+.slaider p {
+    margin-top: 20px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+}
+
+/* articles */
+
+article {
+    width: 350px;
+    margin-top: 40px;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+}
+
+article h2 {
+    font-weight: bold;
+}
+
+.archive {
+    display: none;
+    margin-top: 24px;
+    background-color: #FF0000;
+}
+
+.archive a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* nav menu */
+
+nav {
+    margin-top: 91px;
+    margin-bottom: 91px;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    color: #000000;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+}
+
+@media (min-width: 600px) {
+    header {
+        margin-top: 180px;
+    }
+    .row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    article {
+        margin-left: 20px;
+        margin-top: 45px;
+    }
+    article p {
+        height: 260px;
+        overflow: hidden;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-element {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .archive {
+        display: inline-block;
+    }
+}
